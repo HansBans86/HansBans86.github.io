@@ -24,7 +24,9 @@ function App() {
                     />
                 </aside>
                 <section className="detail-panel">
-                    <ProjectDetail project={selectedProject}/>
+                    <div key={selectedProject.id} className="fade-in-content">
+                        <ProjectDetail project={selectedProject}/>
+                    </div>
                 </section>
             </main>
             <footer>

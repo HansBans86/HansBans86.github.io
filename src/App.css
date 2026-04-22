@@ -19,7 +19,8 @@ body {
 .app-container {
     display: flex;
     height: 100vh;
-    width: 70vw;
+    width: 95vw;
+    max-width: 1200px;
     margin: auto;
     align-self: center;
     flex-direction: column;
@@ -58,20 +59,17 @@ body {
     width: 33%;
     border-right: 5px solid var(--shadow-grey_dark);
     overflow-y: auto;
-}
-
-.detail-panel {
-    flex: 1;
-    overflow-y: auto;
-    padding: 2rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--dark-spruce) transparent;
 }
 
 .sidebar-item {
-    padding: 1rem;
+    margin: 1rem;
+    padding: 1.5rem;
     cursor: pointer;
-    border-left: 4px solid var(--evergreen);
-    border-bottom: 4px solid var(--evergreen);
-    border-top: 4px solid var(--evergreen);
+    border-radius: 20px;
+    background-color: var(--evergreen);
+    border-bottom: 4px solid var(--dark-spruce);
     transition: background 0.2s;
 }
 
@@ -80,9 +78,29 @@ body {
 }
 
 .sidebar-item.active {
-    border-left: 4px solid var(--ruby-red);
     border-bottom: 4px solid var(--ruby-red);
-    border-top: 4px solid var(--ruby-red);
+}
+
+
+.detail-panel {
+    flex: 1;
+    overflow-y: auto;
+    padding: 2rem;
+}
+
+.fade-in-content {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .tag {
