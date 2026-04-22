@@ -1,4 +1,4 @@
-import type {MyProjects} from '../components/MyProjects.ts';
+import type {MyProjects} from './MyProjects.ts';
 
 interface Props {
     projects: MyProjects[];
