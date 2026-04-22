@@ -1,6 +1,6 @@
 import './App.css'
 import Contact from '../src/components/Contact';
-import ProjectCard from './components/ProjectCard.tsx';
+import ProjectDetail from './components/ProjectDetail.tsx';
 import ProjectSidebar from './components/ProjectSidebar.tsx';
 import Footer from "../src/components/Footer";
 import {projects} from "./components/MyProjects.ts";
@@ -24,7 +24,7 @@ function App() {
                     />
                 </aside>
                 <section className="detail-panel">
-                    <ProjectCard/>
+                    <ProjectDetail project={selectedProject}/>
                 </section>
             </main>
             <footer>
