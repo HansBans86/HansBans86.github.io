@@ -1,8 +1,8 @@
 import './App.css'
-import Contact from '../src/components/Contact';
+import Contact from '../src/components/Contact.tsx';
 import ProjectDetail from './components/ProjectDetail.tsx';
 import ProjectSidebar from './components/ProjectSidebar.tsx';
-import Footer from "../src/components/Footer";
+import Footer from "../src/components/Footer.tsx";
 import {projects} from "./components/MyProjects.ts";
 import {useState} from "react";
 
